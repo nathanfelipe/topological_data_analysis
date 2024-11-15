@@ -1,0 +1,21 @@
+Better document the code
+
+Add simpler examples of field of coefficients in the first computations
+
+Improve GUI to allow for in-window parameter selection.
+
+Import final data as PyTorch for neural network training?
+
+Open small window explaining each of the "computations" when mouse hover over the button selection.
+
+There is juts so much things to do, I dont have enough time...
+
+field of coeff on heart data
+
+Apply that to multivariate times series (construct embedding out of n times series instead of just one and uncover topological structures that relates
+a collection of times series.)
+
+add the time delay computation to demonstrate how TDA can help us to understand muilti-scale data. cf. my Bochum presentation.
+
+Possible application of this method: Multivariate time series and symbolic regression. GW from anomalous pulsar data. Explore more the "field of coefficient" part.
+
