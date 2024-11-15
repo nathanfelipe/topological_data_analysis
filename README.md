@@ -1,10 +1,9 @@
 # Project Documentation
 
-<figure style="text-align: center;">
-  <img src="images/TDA_pipeline.png"  
-   alt="TDA pipeline" width="" height="">
-  <figcaption style="text-align: center;">Image credit: https://www.youtube.com/watch?v=fpL5fMmJHqk</figcaption>
-</figure>
+<p align="center">
+  <img src="images/TDA_pipeline.png" >
+  Image credit: https://www.youtube.com/watch?v=fpL5fMmJHqk
+</p>
 
 ## 1. Introduction
 
@@ -57,10 +56,10 @@ my presentation on the literature's folder, and the references therewith!**
   and eigenvectors indicate the direction of the principal components in the feature 
   space, they are then ordered from highest to lowest Eigenvalue). 
 
-<figure style="text-align: center;">
+<p align="center">
   <img src="images/GaussianScatterPCA.svg"  
    alt="TDA pipeline" width="400" height="500">
-  <figcaption style="text-align: center;">PCA of a multivariate 
+  <figcaption style="text-align: center;">Figure 1: PCA of a multivariate 
    Gaussian distribution. The vectors shown are the eigenvectors of the covariance 
    matrix scaled by the square root of the corresponding eigenvalue, and shifted 
    so their tails are at the mean. By <a href="//commons.wikimedia.org/wiki/User:Nicoguaro" 
@@ -69,7 +68,7 @@ my presentation on the literature's folder, and the references therewith!**
    title="Creative Commons Attribution 4.0">CC BY 4.0</a>, 
    <a href="https://commons.wikimedia.org/w/index.php?curid=46871195">
    Link</a></figcaption>
-</figure>
+</p>
 
 
 - **Time Series Analysis**
@@ -127,12 +126,11 @@ current data.
 embeddings. This approach works best with cyclical phenomena, but I believe one could express the data
 in a way as to expose patterns in a categorizable way.
 
-<figure style="text-align: center;">
+<p align="center">
   <img src="images/sliding_window_embedding.png"  
    alt="TDA pipeline" width="" height="">
-  <figcaption style="text-align: center;">Figure reference: https://bit.ly/3easx09
-   </figcaption>
-</figure>
+  Figure 2: reference: https://bit.ly/3easx09
+</p>
 
 
 - **Time Derivative Computation**
@@ -180,14 +178,13 @@ in a way as to expose patterns in a categorizable way.
     - Flexibility Across Domains: Applicable to various types of data, including point clouds, images, and time series.
 
 
-<figure style="text-align: center;">
-  <img src="images/Cyclical_TS.png"  
-   alt="TDA pipeline" width="" height="">
-  <figcaption style="text-align: center;"> TDA 
-pipeline applied to a time series using PCA and a sliding window 
-embedding to extract patterns in TS data.
-   </figcaption>
-</figure>
+<p align="center">
+  <img src="images/Cyclical_TS.png">
+</p>
+
+<p align="center">
+ Figure 3: TDA pipeline applied to a time series using PCA and a sliding window embedding to extract patterns in TS data.
+</p>
 
 
 - **Persistence Homology**
@@ -240,18 +237,20 @@ The example can be extended to higher dimensions at the cost of human capability
 visualisation and computer memory usage. Those could, nonetheless, still be valid for a
 more accurate machine learning training process
 
-<figure style="text-align: center;">
+<p align="center">
   <img src="images/TS-PCA-Embedding-PD.png"  
    alt="TDA pipeline" width="" height="">
-  <figcaption style="text-align: center;"> The persistence diagram (top left) plots the “birth” and “death” 
+</p>
+
+<p align="center">
+ Figure 4: The persistence diagram (top left) plots the “birth” and “death” 
 times of topological features extracted from the data at different
 scales. H_0  features (blue dots) correspond to connected components, and  H_1  
 features (orange dots) represent loops or circular structures. The larger persistence values indicate more 
 prominent topological features that persist across scales, while features close to the 
 diagonal represent noise. The two largest persistence values (Max Pers: 3.67, 2nd Pers: 3.86) 
 suggest significant cyclical structures within the data.
-   </figcaption>
-</figure>
+</p>
 
 ## 3. Code Details
 
@@ -374,28 +373,17 @@ suggest significant cyclical structures within the data.
     - We are going to generate two signals g1 and g2 and analyse how their topological structure change
     when we look at their persistence diagram over a field of coefficients, Z/2Z and Z/3Z:
 
-<figure style="text-align: center;">
-  <img src="images/field_of_coefficients_1.png"  
+<p align="center">
+ <img src="images/field_of_coefficients_2.png"  
    alt="TDA pipeline" width="" height="">
-  <figcaption style="text-align: center;"> Two different time series signals, 
-g_1  and  g_2. The different coefficients
+</p>
+
+<p align="center">
+ Figure 5: Two different time series signals, 
+f_1  and  f_2. The different coefficients
 cause slight variations in the embedding patterns, but both show 
-a continuous path through 3D space, highlighting the cyclical 
-dynamics of each signal.
-   </figcaption>
-</figure>
-
-
-<figure style="text-align: center;">
-  <img src="images/field_of_coefficients_2.png"  
-   alt="TDA pipeline" width="" height="">
-  <figcaption style="text-align: center;"> The differences between
-the persistence diagrams using  Z/2Z and Z/3Z reflect how homology features change with 
-different coefficient fields. This provides deeper insights into 
-the structure of the signal and help detect periodicity or 
-multi-dimensional cycles.
-   </figcaption>
-</figure>
+a continuous path through 3D space, highlighting the cyclical.
+</p>
 
 
 - **PCA on Video - Throat**
@@ -462,42 +450,55 @@ multi-dimensional cycles.
 Shown here our heart example: I have used a dummy video of a heart video I downloaded and compressed. 
 Details about the computation can be found on Section 4 of the present document. 
 
-<figure style="text-align: center;">
+
+<p align="center">
   <img src="images/screen_shots/heart_video.png"  
    alt="TDA pipeline" width="" height="">
-  <figcaption style="text-align: center;"> Screen shot of  the video used for the TDA of a heart beating. Credit: Getty Images. 
-   </figcaption>
-</figure>
+</p>
+
+<p align="center">
+  Figure 6: Screen shot of  the video used for the TDA of a heart beating. Credit: Getty Images.
+</p>
+
 
 After the analysis, we are given a cumulative variance analysis plot, to understand how many principal 
 components are needed in order to capture the variance (information) of the data.
 
-<figure style="text-align: center;">
+
+
+<p align="center">
   <img src="images/cumulative_variance_heart.png"  
    alt="TDA pipeline" width="" height="">
-  <figcaption style="text-align: center;"> Cumulative variance 
+</p>
+
+<p align="center">
+  Figure 7:  Cumulative variance 
 explained by each principal component, highlighting how much of
 the data’s variability is captured as more principal components 
 are added. More PCs add to variability, but increase computational cost and could
-be just a result of noise. 
-   </figcaption>
-</figure>
+be just a result of noise.
+</p>
+
 
 We then proceed with the plotting of the heart PCA embedding. Here, each row in
 the figure represents a time series from one of the first six principal components (PC1 through PC6) 
 extracted from the original data. Each corresponding 3D plot shows the sliding window embedding 
 of the time series for each principal component.
 
-<figure style="text-align: center;">
+
+<p align="center">
   <img src="images/heart_pca_embedding.png"  
    alt="TDA pipeline" width="" height="">
-  <figcaption style="text-align: center;"> The cyclic and toroidal 
+</p>
+
+<p align="center">
+  Figure 8: The cyclic and toroidal 
 shapes in each embedding indicate that each principal component 
 retains some periodic or oscillatory structure. The closed or looping 
 structures suggest recurring patterns that may represent regular heart 
 cycles or beats.
-   </figcaption>
-</figure>
+</p>
+
 
 Last, we perform the persistence diagram analysis of the processed data.
 Each plot in the figure below shows a persistence diagram for one of the 
@@ -518,18 +519,20 @@ a few PCs would be needed, that would reduce the size of the training set. In ca
 of modelling the heart beat, the same could be done, but instead of looking at the
 whole video, we would try to model only the TSs of PCs 1 to 4/5, reducing the 
 
-<figure style="text-align: center;">
+<p align="center">
   <img src="images/heart_persistence_diagram.png"  
    alt="TDA pipeline" width="" height="">
-  <figcaption style="text-align: center;"> The diagrams identify 
+</p>
+
+<p align="center">
+  Figure 9: The diagrams identify 
 significant topological features in each principal component’s time 
 series, using three types of homology classes. H_0: Connected 
 components (shown as blue dots), representing clusters or isolated 
 components. H_1: Loops (orange dots), indicating cyclic structures.
 H_2: Voids or higher-dimensional holes (green dots), which may 
 suggest more complex multi-dimensional features.
-   </figcaption>
-</figure>
+</p>
 
 The persistence diagrams for the first few components show more prominent features,
 especially in  H_1  (orange points), indicating strong cyclic structures in these 
