@@ -1,4 +1,4 @@
-# Project Documentation
+# Manifold Learning: Understanding the Shape of Data
 
 <p align="center">
   <img src="images/TDA_pipeline.png" >
